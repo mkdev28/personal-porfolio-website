@@ -1,2 +1,2 @@
 # personal-porfolio-website
-the website contains a fun introduction to myself!
+this project website contains a fun introduction to myself!
