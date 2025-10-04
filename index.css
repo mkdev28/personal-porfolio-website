@@ -1,0 +1,374 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(255, 255, 225);
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; 
+}
+
+
+.main-content {
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 0 40px; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0; 
+}
+
+
+/*.border:hover {
+    
+    outline: 2px solid black;
+}*/
+
+.nav-intro p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a253c;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-contactus {
+    display: flex;
+    font-size: large;
+    gap: 20px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0d2c54;
+}
+
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0; 
+    min-height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 50%;
+    z-index: 1;
+}
+
+.greeting, .location {
+    font-size: 25px;
+
+    font-weight: 500;
+    color: #81b02f;
+}
+.loc-1 {
+    font-weight: bold;
+    color: #2b24ad;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    font-weight: 800;
+    color: #1a253c;
+    line-height: 1.2;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.resume-button {
+    background-color: #fceb9e;
+    border: 2px solid #c9c086;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    font-size: 18px;
+    font-style: oblique;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.resume-button:hover {
+    background-color: #ffe066;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid #556B2F;
+}
+
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.decorative-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.decorative-elements .plus-group {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #556B2F;
+    transform: rotate(15deg);
+}
+
+.decorative-elements .slash-group {
+    position: absolute;
+    bottom: 20px;
+    left: -40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #556B2F;
+    transform: rotate(45deg);
+}
+
+
+.about-section, .work-section, .contact-section {
+    padding: 60px 0;
+}
+
+
+.about-section {
+    max-width: 1000px;
+}
+
+.about-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    color: #f38d9b;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.about-section p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.about-section .experience-list {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+.about-section .experience-list li {
+    margin-bottom: 30px;
+}
+
+.about-section .experience-list li::marker {
+    color: #1a253c;
+    font-size: 1.2em;
+}
+
+.about-section .experience-list h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.about-section .experience-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+
+.work-section {
+    max-width: 1200px;
+}
+
+.work-section h2 {
+   font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    color: #914ffc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.section-content  p {
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+.project-card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.project-card .project-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.project-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.contact-section {
+    width: 100%;
+       
+    
+}
+.contact-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    color: #2ECC71;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.contact-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-image img {
+    width: 100%;
+    height:auto;
+    display: block;
+}
+.contact-text{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:baseline; 
+
+}
+.contact-text p {
+    
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contact-links a {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a253c;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-links a:hover {
+    color: #f26419;
+}
+
+
+/* Lets add responsiveness*/
+
+
+
+
+@media (max-width: 768px) {
+
+    
+    .nav-intro p {
+        font-size: 15px; 
+    }
+    .nav-links a {
+        font-size: 12px; 
+    }
+
+    
+    .nav-contactus {
+        display: none;
+    }
+    
+    
+    .nav-links {
+       
+        justify-content: flex-end; 
+        gap: 10px;
+        
+        
+    }
+    
+    .nav-links li {
+        margin: 10px 0; 
+    }
+}
